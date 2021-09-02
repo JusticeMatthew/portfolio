@@ -1,21 +1,21 @@
-import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Link } from "react-router-dom";
-import Home from "../../components/Home";
-import About from "../../components/About";
-import Portfolio from "../../components/Portfolio";
-import News from "../../components/News";
-import Contact from "../../components/Contact";
-import AnimatedCursor from "react-animated-cursor";
+import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Link } from 'react-router-dom';
+import Home from '../../components/Home';
+import About from '../../components/About';
+import Portfolio from '../../components/Portfolio';
+import News from '../../components/News';
+import Contact from '../../components/Contact';
+import AnimatedCursor from 'react-animated-cursor';
 
 const HomeDark = () => {
-  document.body.classList.add("dark");
+  document.body.classList.add('dark');
   return (
     <>
       <AnimatedCursor
         innerSize={12}
         outerSize={50}
-        color="255, 255, 255"
+        color='255, 255, 255'
         outerAlpha={0.2}
         innerScale={0.41}
         outerScale={1}
@@ -23,74 +23,52 @@ const HomeDark = () => {
       <Tabs>
         <TabList>
           {/* START LEFT MENU CONTENT */}
-          <div className="leftpart">
-            <div className="leftpart_inner">
-              <div className="logo">
-                <Link className="navbar-brand" to="/">
-                  <img src="/assets/img/logo/dark.png" alt="brand" />
+          <div className='leftpart'>
+            <div className='leftpart_inner'>
+              <div className='logo'>
+                <Link className='navbar-brand' to='/'>
+                  <img src='/assets/img/logo/dark.png' alt='brand' />
                 </Link>
               </div>
               {/* END LOGO */}
 
-              <div className="menu">
+              <div className='menu'>
                 <ul>
                   <Tab>
                     <img
-                      className="svg"
-                      src="/assets/img/svg/home-run.svg"
-                      alt="homerun"
+                      className='svg'
+                      src='/assets/img/svg/home.svg'
+                      alt='house'
                     />
-                    <span className="menu_content">Home</span>
+                    <span className='menu_content'>Home</span>
                   </Tab>
                   <Tab>
                     <img
-                      className="svg"
-                      src="/assets/img/svg/avatar.svg"
-                      alt="avatar"
+                      className='svg'
+                      src='/assets/img/svg/user.svg'
+                      alt='user icon'
                     />
-                    <span className="menu_content">About</span>
+                    <span className='menu_content'>About</span>
                   </Tab>
                   <Tab>
                     <img
-                      className="svg"
-                      src="/assets/img/svg/briefcase.svg"
-                      alt="briefcase"
+                      className='svg'
+                      src='/assets/img/svg/code.svg'
+                      alt='code brackets'
                     />
-                    <span className="menu_content">Portfolio</span>
+                    <span className='menu_content'>Portfolio</span>
                   </Tab>
                   <Tab>
                     <img
-                      className="svg"
-                      src="/assets/img/svg/paper.svg"
-                      alt="paper"
+                      className='svg'
+                      src='/assets/img/svg/mail.svg'
+                      alt='mail'
                     />
-                    <span className="menu_content">News</span>
-                  </Tab>
-                  <Tab>
-                    <img
-                      className="svg"
-                      src="/assets/img/svg/mail.svg"
-                      alt="mail"
-                    />
-                    <span className="menu_content"> Contact</span>
+                    <span className='menu_content'> Contact</span>
                   </Tab>
                 </ul>
               </div>
               {/* END MENU */}
-
-              <div className="copyright">
-                <p>
-                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by
-                  <a
-                    href="https://themeforest.net/user/ib-themes"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ib-Themes
-                  </a>
-                </p>
-              </div>
-              {/* END COPYRIGHT */}
             </div>
           </div>
           {/* END LEFT MENU CONTENT */}
@@ -98,10 +76,10 @@ const HomeDark = () => {
         {/* END SIDEBAR TABLIST */}
 
         {/* START RIGHT PART CONTENT */}
-        <div className="rightpart">
-          <div className="rightpart_in">
-            <div className="tokyo_tm_section">
-              <div className="container">
+        <div className='rightpart'>
+          <div className='rightpart_in'>
+            <div className='tokyo_tm_section'>
+              <div className='container'>
                 <TabPanel>
                   <Home />
                 </TabPanel>
@@ -116,11 +94,6 @@ const HomeDark = () => {
                   <Portfolio />
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
-
-                <TabPanel>
-                  <News />
-                </TabPanel>
-                {/* END NEWS MENU TAB CONTENT */}
 
                 <TabPanel>
                   <Contact />

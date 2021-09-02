@@ -19,7 +19,7 @@ const Home = () => {
           <div className='details'>
             <h3 className='name'>Matthew Justice</h3>
             <p className='job'>
-              I am a full-stack web developer in the US driven by learning and
+              I am a US based full-stack developer driven by learning and
               understanding
             </p>
             {/* END JOB */}

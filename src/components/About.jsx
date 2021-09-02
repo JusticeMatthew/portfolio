@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-import Brand from "./Brand";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Brand from './Brand';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,68 +13,59 @@ const About = () => {
 
   return (
     <>
-      <div className="tokyo_tm_about">
-        <div className="about_image ">
-          <img src="assets/img/slider/1.jpg" alt="about" />
+      <div className='tokyo_tm_about'>
+        <div className='about_image '>
+          <img src='assets/img/slider/about.jpg' alt='about' />
         </div>
         {/* <div className="o-video">
           <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
         </div> */}
         {/* END ABOUT IMAGE */}
-        <div className="description">
-          <h3 className="name">Adriano Smith &amp; Photographer</h3>
-          <div className="description_inner">
-            <div className="left">
+        <div className='description'>
+          <h3 className='name'>Matthew Justice</h3>
+          <h6>Web Developer</h6>
+          <br />
+          <div className='description_inner'>
+            <div className='left'>
               <p>
-                Hello, I am a creative photographer based in New York and happy
-                to travel all over Europe to capture your big day in candid and
-                authentic photos. I will create a lasting memory of the people.
+                Welcome! My name is Matthew Justice and I am a pet loving, US
+                based, full stack web developer. I am passionate about all
+                things coding and technology and love opportunities to learn
+                more about either. Please feel free to look through my projects
+                and/or contact me directly!
               </p>
-              <div className="tokyo_tm_button">
-                <button onClick={toggleModal} className="ib-button">
+              <div className='tokyo_tm_button'>
+                <button onClick={toggleModal} className='ib-button'>
                   Read More
                 </button>
               </div>
               {/* END TOKYO BUTTON */}
             </div>
             {/* END LEFT */}
-            <div className="right">
+            <div className='right'>
               <ul>
                 <li>
                   <p>
-                    <span>Birthday:</span>01.07.1990
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Age:</span>31
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Address:</span>Ave 11, New York, USA
+                    <span>Birthday:</span>07.06.1991
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                    <a href='mailto:matthewajustice@gmail.com'>
+                      matthewajustice@gmail.com
+                    </a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Phone:</span>
-                    <a href="tel:+770221770505">+77 022 177 05 05</a>
+                    <a href='tel:+14076875652'>+1 (407) 687-5652</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Study:</span>Univercity of Texas
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Freelance:</span>Available
+                    <span>Education:</span>Lambda School
                   </p>
                 </li>
               </ul>
@@ -90,66 +81,66 @@ const About = () => {
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
-        contentLabel="My dialog"
-        className="mymodal"
-        overlayClassName="myoverlay"
+        contentLabel='My dialog'
+        className='mymodal'
+        overlayClassName='myoverlay'
         closeTimeoutMS={500}
       >
-        <div className="tokyo_tm_modalbox_about">
-          <button className="close-modal" onClick={toggleModal}>
-            <img src="assets/img/svg/cancel.svg" alt="close icon" />
+        <div className='tokyo_tm_modalbox_about'>
+          <button className='close-modal' onClick={toggleModal}>
+            <img src='assets/img/svg/cancel.svg' alt='close icon' />
           </button>
           {/* END POPUP CLOSE BUTTON */}
-          <div className="box-inner">
-            <div className="description_wrap scrollable">
-              <div className="my_box">
-                <div className="left">
-                  <div className="about_title">
-                    <h3>Photography Skills</h3>
+          <div className='box-inner'>
+            <div className='description_wrap scrollable'>
+              <div className='my_box'>
+                <div className='left'>
+                  <div className='about_title'>
+                    <h3>Web Development</h3>
                   </div>
                   {/* END ABOUT TITLE */}
 
-                  <div className="tokyo_progress">
-                    <div className="progress_inner" data-value="95">
+                  <div className='tokyo_progress'>
+                    <div className='progress_inner' data-value='95'>
                       <span>
-                        <span className="label">Wedding Photography</span>
-                        <span className="number">95%</span>
+                        <span className='label'>React</span>
+                        <span className='number'>95%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 95 + "%" }}
+                            className='bar_in'
+                            style={{ width: 95 + '%' }}
                           ></div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="progress_inner" data-value="80">
+                    <div className='progress_inner' data-value='80'>
                       <span>
-                        <span className="label">Lifestyle Photography</span>
-                        <span className="number">80%</span>
+                        <span className='label'>Node</span>
+                        <span className='number'>80%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 80 + "%" }}
+                            className='bar_in'
+                            style={{ width: 80 + '%' }}
                           ></div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="progress_inner" data-value="90">
+                    <div className='progress_inner' data-value='90'>
                       <span>
-                        <span className="label">Family Photography</span>
-                        <span className="number">90%</span>
+                        <span className='label'>Git</span>
+                        <span className='number'>90%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
+                            className='bar_in'
+                            style={{ width: 90 + '%' }}
                           ></div>
                         </div>
                       </div>
@@ -159,52 +150,52 @@ const About = () => {
                 </div>
                 {/* END LEFT */}
 
-                <div className="right">
-                  <div className="about_title">
-                    <h3>Language Skills</h3>
+                <div className='right'>
+                  <div className='about_title'>
+                    <h3>Languages</h3>
                   </div>
                   {/* END TITLE */}
-                  <div className="tokyo_progress">
-                    <div className="progress_inner" data-value="95">
+                  <div className='tokyo_progress'>
+                    <div className='progress_inner' data-value='95'>
                       <span>
-                        <span className="label">English</span>
-                        <span className="number">95%</span>
+                        <span className='label'>Javascript</span>
+                        <span className='number'>95%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 95 + "%" }}
+                            className='bar_in'
+                            style={{ width: 95 + '%' }}
                           ></div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="progress_inner" data-value="90">
+                    <div className='progress_inner' data-value='90'>
                       <span>
-                        <span className="label">Japanese</span>
-                        <span className="number">90%</span>
+                        <span className='label'>Python</span>
+                        <span className='number'>55%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
+                            className='bar_in'
+                            style={{ width: 55 + '%' }}
                           ></div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="progress_inner" data-value="85">
+                    <div className='progress_inner' data-value='85'>
                       <span>
-                        <span className="label">Arabian</span>
-                        <span className="number">85%</span>
+                        <span className='label'>PHP</span>
+                        <span className='number'>10%</span>
                       </span>
-                      <div className="background">
-                        <div className="bar">
+                      <div className='background'>
+                        <div className='bar'>
                           <div
-                            className="bar_in"
-                            style={{ width: 85 + "%" }}
+                            className='bar_in'
+                            style={{ width: 10 + '%' }}
                           ></div>
                         </div>
                       </div>
@@ -216,40 +207,33 @@ const About = () => {
               </div>
               {/* END MYBOX */}
 
-              <div className="counter">
-                <div className="about_title">
+              <div className='counter'>
+                <div className='about_title'>
                   <h3>Fun Facts</h3>
                 </div>
                 <ul>
                   <li>
-                    <div className="list_inner">
-                      <h3>777+</h3>
-                      <span>Projects Completed</span>
+                    <div className='list_inner'>
+                      <h3>3</h3>
+                      <span>Very strange pets</span>
                     </div>
                   </li>
                   <li>
-                    <div className="list_inner">
-                      <h3>3K</h3>
-                      <span>Happy Clients</span>
+                    <div className='list_inner'>
+                      <h3>1</h3>
+                      <span>Beautiful Wife</span>
                     </div>
                   </li>
                   <li>
-                    <div className="list_inner">
-                      <h3>9K+</h3>
-                      <span>Lines of Code</span>
+                    <div className='list_inner'>
+                      <h3>0</h3>
+                      <span>Broken Bones</span>
                     </div>
                   </li>
                 </ul>
-                {/* END COUNTER CONTENT */}
               </div>
+              {/* END COUNTER CONTENT */}
               {/* END COUNTER */}
-
-              <div className="partners">
-                <div className="about_title">
-                  <h3>Our Partners</h3>
-                </div>
-                <Brand />
-              </div>
               {/* END PARTNER SLIDER */}
             </div>
           </div>
