@@ -164,6 +164,17 @@ const Portfolio = () => {
                       <span className='first'>Client</span>
                       <span>B&C Pest Control</span>
                     </li>
+                    <li>
+                      <span className='first'>Project</span>
+                      <span>
+                        <a
+                          href='https://www.bandcpestcontrol.com/'
+                          target='blank'
+                        >
+                          bandcpestcontrol.com
+                        </a>
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>
