@@ -2,22 +2,12 @@ import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import SimpleReactLightbox from 'simple-react-lightbox';
 import Modal from 'react-modal';
-import Social from './Social';
 
 const Portfolio = () => {
-  // for popup video
-  const [isOpen, setOpen] = useState(false);
-  const [isOpen2, setOpen2] = useState(false);
-
-  // for modal
   const [isOpen3, setIsOpen3] = useState(false);
-  const [isOpen4, setIsOpen4] = useState(false);
 
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
-  }
-  function toggleModalFour() {
-    setIsOpen4(!isOpen4);
   }
 
   return (

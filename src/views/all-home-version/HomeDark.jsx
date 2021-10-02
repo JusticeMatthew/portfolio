@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Home from '../../components/Home';
 import About from '../../components/About';
 import Portfolio from '../../components/Portfolio';
-import News from '../../components/News';
 import Contact from '../../components/Contact';
 import AnimatedCursor from 'react-animated-cursor';
 
@@ -56,7 +55,7 @@ const HomeDark = () => {
                       src='/assets/img/svg/code.svg'
                       alt='code brackets'
                     />
-                    <span className='menu_content'>Portfolio</span>
+                    <span className='menu_content'>Projects</span>
                   </Tab>
                   <Tab>
                     <img
