@@ -36,7 +36,7 @@ const About = () => {
               </p>
               <div className='tokyo_tm_button'>
                 <button onClick={toggleModal} className='ib-button'>
-                  Read More
+                  Learn More
                 </button>
               </div>
               {/* END TOKYO BUTTON */}
@@ -118,6 +118,21 @@ const About = () => {
 
                     <div className='progress_inner' data-value='80'>
                       <span>
+                        <span className='label'>Next.js</span>
+                        <span className='number'>75%</span>
+                      </span>
+                      <div className='background'>
+                        <div className='bar'>
+                          <div
+                            className='bar_in'
+                            style={{ width: 75 + '%' }}
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className='progress_inner' data-value='80'>
+                      <span>
                         <span className='label'>Node</span>
                         <span className='number'>80%</span>
                       </span>
@@ -141,6 +156,21 @@ const About = () => {
                           <div
                             className='bar_in'
                             style={{ width: 90 + '%' }}
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className='progress_inner' data-value='90'>
+                      <span>
+                        <span className='label'>React-Native</span>
+                        <span className='number'>60%</span>
+                      </span>
+                      <div className='background'>
+                        <div className='bar'>
+                          <div
+                            className='bar_in'
+                            style={{ width: 60 + '%' }}
                           ></div>
                         </div>
                       </div>
@@ -207,7 +237,7 @@ const About = () => {
               </div>
               {/* END MYBOX */}
 
-              <div className='counter'>
+              {/* <div className='counter'>
                 <div className='about_title'>
                   <h3>Fun Facts</h3>
                 </div>
@@ -231,7 +261,7 @@ const About = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               {/* END COUNTER CONTENT */}
               {/* END COUNTER */}
               {/* END PARTNER SLIDER */}

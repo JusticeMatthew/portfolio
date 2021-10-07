@@ -5,9 +5,13 @@ import Modal from 'react-modal';
 
 const Portfolio = () => {
   const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
 
   function toggleModalThree() {
     setIsOpen3(!isOpen3);
+  }
+  function toggleModalFour() {
+    setIsOpen4(!isOpen4);
   }
 
   return (
@@ -38,6 +42,21 @@ const Portfolio = () => {
                     <li>
                       <div className='inner'>
                         <div className='entry tokyo_tm_portfolio_animation_wrap'>
+                          <h4 style={{ marginBottom: 18 }}>BudBud</h4>
+                          <img
+                            src='assets/img/portfolio/2.jpg'
+                            alt='Details'
+                            onClick={toggleModalFour}
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='inner'>
+                        <div className='entry tokyo_tm_portfolio_animation_wrap'>
+                          <h4 style={{ marginBottom: 18 }}>
+                            B & C Pest Control
+                          </h4>
                           <img
                             src='assets/img/portfolio/6.jpg'
                             alt='Details'
@@ -47,17 +66,7 @@ const Portfolio = () => {
                       </div>
                     </li>
                     {/* END DETAILS */}
-                    {/* <li>
-                      <div className='inner'>
-                        <div className='entry tokyo_tm_portfolio_animation_wrap'>
-                          <img
-                            src='assets/img/portfolio/7.jpg'
-                            alt='Details'
-                            onClick={toggleModalFour}
-                          />
-                        </div>
-                      </div>
-                    </li> */}
+
                     {/* END DETAILS */}
                   </ul>
                   {/* END PORTFOLIO LIST */}
@@ -70,6 +79,17 @@ const Portfolio = () => {
                       <div className='inner'>
                         <div className='entry tokyo_tm_portfolio_animation_wrap'>
                           <img
+                            src='assets/img/portfolio/2.jpg'
+                            alt='Details'
+                            onClick={toggleModalFour}
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='inner'>
+                        <div className='entry tokyo_tm_portfolio_animation_wrap'>
+                          <img
                             src='assets/img/portfolio/6.jpg'
                             alt='Details'
                             onClick={toggleModalThree}
@@ -78,17 +98,7 @@ const Portfolio = () => {
                       </div>
                     </li>
                     {/* END DETAILS */}
-                    {/* <li>
-                      <div className='inner'>
-                        <div className='entry tokyo_tm_portfolio_animation_wrap'>
-                          <img
-                            src='assets/img/portfolio/7.jpg'
-                            alt='Details'
-                            onClick={toggleModalFour}
-                          />
-                        </div>
-                      </div>
-                    </li> */}
+
                     {/* END DETAILS */}
                   </ul>
                   {/* END DETAILS GALLERY */}
@@ -125,6 +135,7 @@ const Portfolio = () => {
                   className='main'
                   style={{
                     backgroundImage: 'url(assets/img/portfolio/6.jpg)',
+                    border: '2px solid whitesmoke',
                   }}
                 ></div>
               </div>
@@ -155,7 +166,7 @@ const Portfolio = () => {
                       <span>B&C Pest Control</span>
                     </li>
                     <li>
-                      <span className='first'>Project</span>
+                      <span className='first'>Project Link</span>
                       <span>
                         <a
                           href='https://www.bandcpestcontrol.com/'
@@ -178,7 +189,7 @@ const Portfolio = () => {
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
-      {/* <Modal
+      <Modal
         isOpen={isOpen4}
         onRequestClose={toggleModalFour}
         contentLabel='My dialog'
@@ -199,103 +210,66 @@ const Portfolio = () => {
                   className='main'
                   style={{
                     backgroundImage: 'url(assets/img/portfolio/7.jpg)',
+                    border: '2px solid whitesmoke',
                   }}
                 ></div>
               </div>
 
               <div className='portfolio_main_title'>
-                <h3>Ave Simone</h3>
+                <h3>Mobile App BudBud</h3>
                 <span>Details</span>
               </div>
 
               <div className='main_details'>
                 <div className='textbox'>
                   <p>
-                    We live in a world where we need to move quickly and iterate
-                    on our ideas as flexibly as possible. Building mockups
-                    strikes the ideal balance between true-life representation
-                    of the end product and ease of modification.
+                    BudBud is a personal project under development by myself.
+                    It's designed for medical marijuana patients to have an easy
+                    time tracking various data about their medication, of which
+                    there are hundreds of different types. Information they can
+                    track includes the name of the strain, the type of medicine,
+                    where they purchased it, various dosing information, and a
+                    space for notes about how the medicine effected them. Users
+                    are also able to set specific medication as a "favorite"
+                    which can be tracked in a separate tab for easy locating.
                   </p>
                   <p>
-                    Mockups are useful both for the creative phase of the
-                    project - for instance when you're trying to figure out your
-                    user flows or the proper visual hierarchy - and the
-                    production phase when they will represent the target
-                    product. Making mockups a part of your creative and
-                    development process allows you to quickly and easily ideate.
+                    Future development plans include a search/filter page to
+                    allow users with a large amount of data to easily locate
+                    specific medications and a profile page with various stats
+                    about how much they have used the app.
                   </p>
+                  <p>
+                    If you would like to sample the application you will need to
+                    download the EXPO app from you're devices respective app
+                    store, follow the provided project link to the right, and
+                    then finally scan the QR code using the EXPO app.
+                  </p>
+                  <br />
+                  <h6>Tech Stack</h6>
+                  <p>React-native + styled-components + Firebase & Firestore</p>
                 </div>
                 <div className='detailbox'>
                   <ul>
                     <li>
-                      <span className='first'>Client</span>
-                      <span>Alvaro Morata</span>
-                    </li>
-                    <li>
-                      <span className='first'>Category</span>
-                      <span>Details</span>
-                    </li>
-                    <li>
-                      <span className='first'>Date</span>
-                      <span>March 07, 2021</span>
-                    </li>
-                    <li>
-                      <span className='first'>Share</span>
-                      <Social />
+                      <span className='first'>Project Link</span>
+                      <span>
+                        <a
+                          href='https://expo.dev/@justicematthew/BudBud'
+                          target='blank'
+                          id='projectlink'
+                        >
+                          BudBud
+                        </a>
+                      </span>
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <div className='additional_images'>
-                <ul className='gallery_zoom'>
-                  <li>
-                    <div className='list_inner'>
-                      <div className='my_image'>
-                        <img src='img/thumbs/4-2.jpg' alt='thumb' />
-                        <div
-                          className='main'
-                          style={{
-                            backgroundImage: 'url(assets/img/portfolio/6.jpg)',
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className='list_inner'>
-                      <div className='my_image'>
-                        <img src='img/thumbs/4-2.jpg' alt='thumb' />
-                        <div
-                          className='main'
-                          style={{
-                            backgroundImage: 'url(assets/img/portfolio/5.jpg)',
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className='list_inner'>
-                      <div className='my_image'>
-                        <img src='img/thumbs/4-2.jpg' alt='thumb' />
-                        <div
-                          className='main'
-                          style={{
-                            backgroundImage: 'url(assets/img/portfolio/4.jpg)',
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
-      </Modal> */}
+      </Modal>
     </>
   );
 };
