@@ -239,12 +239,6 @@ const Portfolio = () => {
                     specific medications and a profile page with various stats
                     about how much they have used the app.
                   </p>
-                  <p>
-                    If you would like to sample the application you will need to
-                    download the EXPO app from you're devices respective app
-                    store, follow the provided project link to the right, and
-                    then finally scan the QR code using the EXPO app.
-                  </p>
                   <br />
                   <h6>Tech Stack</h6>
                   <p>React-native + styled-components + Firebase & Firestore</p>
